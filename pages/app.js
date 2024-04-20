@@ -166,6 +166,7 @@ function inUpPosition() {
   if (elobAngle > 170 && elobAngle < 190) {
     if (downPostion == true) {
       reps += 1;
+      document.getElementById('rep-count').textContent = `Reps: ${reps}`;
       console.log(`push completed :${reps}`);
       console.log(elobAngle);
     }
@@ -194,6 +195,7 @@ function inDownPostion() {
     downPostion = true;
   }
 }
+
 
 function updateBackAngle() {
   var leftShoulder = poses[0].keypoints[5];
