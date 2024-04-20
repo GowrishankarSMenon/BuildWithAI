@@ -13,6 +13,11 @@
   background-attachment: fixed; /* Keeps the background image fixed while the content scrolls */
 }
 
+.navComponents{
+    margin: 0 58px;
+    font-size: 28px;
+}
+
 
 #contact {
   max-width: 700px; /* Reduces the width of the contact box */
@@ -33,16 +38,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-secondary" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-secondary" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">Exercises</a>
+              <a class="nav-link text-secondary" href="#">Contact Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary" href="#contact">Contact Us</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Exercises
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Push-ups</a></li>
+                <li><a class="dropdown-item" href="#">Exercise 2</a></li>
+                <li><a class="dropdown-item" href="#">Exercise 3</a></li>
+              </ul>
             </li>
           </ul>
         </div>
