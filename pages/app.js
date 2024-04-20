@@ -196,6 +196,16 @@ function inDownPostion() {
   }
 }
 
+const resetButton = document.getElementById('reset-btn');
+
+// Add a click event listener to the button
+resetButton.addEventListener('click', () => {
+  // Reset the rep counter
+  reps = 0;
+  
+  // Update the rep count displayed on the page (if applicable)
+  document.getElementById('rep-count').textContent = `Reps: ${reps}`;
+});
 
 function updateBackAngle() {
   var leftShoulder = poses[0].keypoints[5];
