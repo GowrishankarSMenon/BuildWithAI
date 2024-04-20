@@ -1,0 +1,16 @@
+.navComponents{
+    font-family: monospace;
+    font-size: 30px;
+    margin: 0 38px;
+}
+.navbar-brand {
+    color: #f0f; /* Change to your desired color for "Personal Trainer" (light blue) */
+  }
+  
+  .nav-link {
+    color: #aaa; /* Change to your desired link color (light gray) */
+  }
+  .navbar {
+    background-color: rgba(255, 255, 255, 0); /* Transparent white background */
+  }
+  
