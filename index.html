@@ -1,67 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap </title>
-    <link rel="stylesheet" href="./style.css ">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <style>
-    body {
-      background-image: url('bgimg2.jpg');
-      background-size: cover; /* Cover the entire viewport */
-      background-attachment: fixed; /* Keep the background fixed while scrolling */
-    }
-    .navbar {
-      background-color: rgba(255, 255, 255, 0); /* Transparent background */
-    }
-  </style>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid navComponents justify-content-end">
-            <b><a class="navbar-brand text-secondary" href="#" style="font-size: 40px;">Personal Trainer</a></b>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Exercises
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Push-ups</a></li>
-                            <li><a class="dropdown-item" href="#">Exercise 2</a></li>
-                            <li><a class="dropdown-item" href="#">Exercise 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <h2 style="text-align: left; padding-left: 50px; padding-top: 300px;" class="text-secondary">Wanna get a body like this?</h2>
-        <a href="#" class="scroll-down-btn">
-          <img
-            style="width: 100px; height: 100px; margin-left: 140px; margin-top: 140px;"
-            src="./media/arrow-down-2.png"
-            class="img-fluid rounded-top"
-            alt="Scroll Down"
-          />
-        </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling Page</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+  body {
+    background-image: url('bgimg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .navbar {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .container-fluid {
+    padding-bottom: 120px; /* Adjust this value based on the height of the new section */
+  }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid navComponents justify-content-end">
+      <b><a class="navbar-brand text-secondary" href="#" style="font-size: 40px;">Personal Trainer</a></b>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Exercises
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Push-ups</a></li>
+              <li><a class="dropdown-item" href="#">Exercise 2</a></li>
+              <li><a class="dropdown-item" href="#">Exercise 3</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <h2 style="text-align: left; padding-left: 50px; padding-top: 300px;" class="text-secondary">Wanna get a body like this?</h2>
+    <a href="#scroll-target" class="scroll-down-btn">
+      <img
+      style="width: 100px; height: 100px; margin-left: 140px; margin-top: 140px;"
+      src="./media/arrow-down-2.png"
+      class="img-fluid rounded-top"
+      alt="Scroll Down"
+      />
+    </a>
+  </div>
+  <!-- Section to scroll to -->
+  <div id="scroll-target" style="height: 1000px; background-color: rgba(255, 255, 255, 0.75);">
+    <h1 style="padding: 40px;">Test out your Pushup skills with our new real time tracker !
+    </h1>
+  </div>
+  <script>
+    document.querySelector('.scroll-down-btn').addEventListener('click', function(event) {
+      event.preventDefault();
+      const target = document.querySelector('#scroll-target');
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
