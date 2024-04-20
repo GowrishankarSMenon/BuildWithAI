@@ -9,49 +9,59 @@
   </head>
   <style>
     body {
-    background-image: url('bgimg2.jpg');
-    background-size: cover; /* Cover the entire viewport */
-    background-attachment: fixed; /* Keep the background fixed while scrolling */
+      background-image: url('bgimg2.jpg');
+      background-size: cover; /* Cover the entire viewport */
+      background-attachment: fixed; /* Keep the background fixed while scrolling */
     }
-    navbar-expand-lg{
-        background-color: rgba(255, 255, 255, 0); /* Transparent white background */
+    .navbar {
+      background-color: rgba(255, 255, 255, 0); /* Transparent background */
     }
-
   </style>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid navComponents" style="background-color: rgba(255, 255, 255, 0);">
-          <a class="navbar-brand text-secondary" href="#" style="font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Personal Trainer</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-secondary" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-secondary" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Exercises
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Push-ups</a></li>
-                  <li><a class="dropdown-item" href="#">Exercise 2</a></li>
-                  <li><a class="dropdown-item" href="#">Exercise 3</a></li>
+        <div class="container-fluid navComponents justify-content-end">
+            <b><a class="navbar-brand text-secondary" href="#" style="font-size: 40px;">Personal Trainer</a></b>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Exercises
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Push-ups</a></li>
+                            <li><a class="dropdown-item" href="#">Exercise 2</a></li>
+                            <li><a class="dropdown-item" href="#">Exercise 3</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
-
+    </nav>
+    <div class="container-fluid">
+        <h2 style="text-align: left; padding-left: 50px; padding-top: 300px;" class="text-secondary">Wanna get a body like this?</h2>
+        <a href="#" class="scroll-down-btn">
+          <img
+            style="width: 100px; height: 100px; margin-left: 140px; margin-top: 140px;"
+            src="./media/arrow-down-2.png"
+            class="img-fluid rounded-top"
+            alt="Scroll Down"
+          />
+        </a>
+      </div>
+    
 </body>
 </html>
